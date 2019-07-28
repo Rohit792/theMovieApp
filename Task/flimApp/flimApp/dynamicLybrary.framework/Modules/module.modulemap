@@ -1,0 +1,11 @@
+framework module dynamicLybrary {
+  umbrella header "dynamicLybrary.h"
+
+  export *
+  module * { export * }
+}
+
+module dynamicLybrary.Swift {
+    header "dynamicLybrary-Swift.h"
+    requires objc
+}
